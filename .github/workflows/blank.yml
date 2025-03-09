@@ -46,9 +46,7 @@ jobs:
 
       # En lugar de "aws s3 ls" (que lista TODOS los buckets), 
       # listamos SOLO el contenido de tu bucket "landing-casas-0101".
-      - name: List objects in landing-casas-0101
-        run: aws s3 ls s3://landing-casas-0101
-
+      
       - name: Deploy with Zappa
         run: |
           zappa deploy download-dev
