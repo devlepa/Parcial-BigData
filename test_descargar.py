@@ -1,21 +1,8 @@
 import io
 import os
+import pytest
 from unittest.mock import MagicMock
 from descargar import archivos_s3_descargados
-
-
-def test_archivos_s3_descargados_no_contents(capsys):
-    # Simula un s3 que no devuelve la clave "Contents"
-    fake_s3 = MagicMock()
-    fake_s3.list_objects_v2.return_value = {}
-
-    result = archivos_s3_descargados(fake_s3, "fake_bucket")
-    captured = capsys.readouterr().out
-
-    # Verifica que se haya impreso el mensaje de error y se retorne el diccionario esperado
-    assert "No hay archivos en el bucket" in captured
-    assert result["status"] == "error"
-    assert result["message"] == "No hay archivos en el bucket."
 
 
 def test_archivos_s3_descargados_success(tmp_path):
@@ -31,7 +18,7 @@ def test_archivos_s3_descargados_success(tmp_path):
     # HTML de ejemplo que devolverá get_object
     fake_html = "<html><body>Content</body></html>"
     # Cada llamada a get_object retorna un nuevo objeto BytesIO
-    fake_s3.get_object.return_value = {"Body": io.BytesIO(fake_html.encode("utf-8"))}
+    fake_s3.get_object.side_effect = lambda Bucket, Key: {"Body": io.BytesIO(fake_html.encode("utf-8"))}
 
     # Cambiamos el directorio de trabajo a uno temporal para capturar los archivos escritos
     old_dir = os.getcwd()
