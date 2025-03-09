@@ -11,17 +11,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1) Obtener el código
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2) Configurar versión de Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install autopep8 flake8 pytest zappa
 
-      # 3) Configurar credenciales de AWS por variables de entorno
+      - name: Format code with autopep8
+        run: |
+          autopep8 --in-place --recursive --aggressive --aggressive .
+
+      # Aquí excluimos la carpeta 'venv' al ejecutar flake8
+      - name: Lint with flake8
+        run: flake8 --exclude=venv .
+
+      - name: Run tests with pytest
+        run: pytest --maxfail=1 --disable-warnings -q
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
@@ -30,28 +44,8 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
 
-      # 4) En un mismo paso: crear y activar el entorno virtual, instalar todo y desplegar con Zappa
-      - name: Create virtualenv, install, lint, test, deploy
+
+      - name: Deploy with Zappa
         run: |
-          # Crear un entorno virtual en la carpeta "venv"
-          python -m venv venv
-          # Activarlo
-          source venv/bin/activate
-          
-          # Instalar dependencias
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install autopep8 flake8 pytest zappa
-          
-          # Formatear con autopep8
-          autopep8 --in-place --recursive --aggressive --aggressive .
-          
-          # Lint con flake8
-          flake8 .
-          
-          # Tests con pytest
-          pytest --maxfail=1 --disable-warnings -q
-          
-          # Finalmente, desplegar con Zappa
           zappa deploy download-dev
           zappa deploy upload-dev
