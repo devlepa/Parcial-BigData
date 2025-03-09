@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "app_function": "lambda_handler.lambda_handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "zappa",
+        "runtime": "python3.9",
+        "keep_warm": false,
+        "s3_bucket": "zappa-deployments-234322",
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "role_name": "robomaker_students",
+        "slim_handler": true,
+        "events": [{
+            "function": "lambda_handler.lambda_handler",
+            "expression": "cron(0 9 ? * MON *)"
+        }]
+    }
+}

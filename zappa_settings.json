@@ -1,0 +1,21 @@
+{
+    "dev": {
+        "app_function": "main.lambda_handler",
+        "aws_region": "us-east-1",
+        "exclude": [
+            "boto3",
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ],
+        "profile_name": "default",
+        "project_name": "parcial1",
+        "runtime": "python3.12",
+        "s3_bucket": "zappa-xe6o93rce",
+        "events": [{
+            "function": "main.lambda_handler",
+            "expression": "cron(0 9 ? * MON *)"
+        }]
+    }
+}
