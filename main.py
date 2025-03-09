@@ -37,6 +37,8 @@ if '__main__' == __name__:
     time.sleep(10)
     subir_s3(s3, path, headers, date_str, bucket_name_1)
     time.sleep(10)
+    archivos_s3_descargados(s3, bucket_name_1)
+    time.sleep(10)
     crear_csv(scraping(s3, bucket_name_1))
     time.sleep(10)
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
