@@ -46,7 +46,6 @@
                 "function": "main.lambda_handler_upload_csv",
                 "expression": "cron(30 9 ? * MON *)"
             }
-        ],
-        "use_environment_credentials": true
+        ]
     }
 }
