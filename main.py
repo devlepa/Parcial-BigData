@@ -58,4 +58,4 @@ if '__main__' == __name__:
         bucket_name=bucket_name_2,
         s3_key=f"carpeta/datos{date_str}.csv"
     )
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    #uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
