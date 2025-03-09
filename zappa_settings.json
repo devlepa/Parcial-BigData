@@ -21,7 +21,8 @@
                 "function": "main.lambda_handler_download_scrape",
                 "expression": "cron(0 9 ? * MON *)"
             }
-        ]
+        ],
+        "use_environment_credentials": true
     },
     "upload-dev": {
         "app_function": "main.lambda_handler_upload_csv",
@@ -45,7 +46,7 @@
                 "function": "main.lambda_handler_upload_csv",
                 "expression": "cron(30 9 ? * MON *)"
             }
-        ]
+        ],
+        "use_environment_credentials": true
     }
 }
-
