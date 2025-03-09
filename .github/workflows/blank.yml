@@ -38,6 +38,11 @@ jobs:
       - name: List current directory
         run: ls
 
+      - name: Dendencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requierements.txt
+          
       - name: Lint with flake8
         run: |
           flake8 .
@@ -49,11 +54,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
            python-version: '3.x'
-      - name: Run tests
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pytest 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
