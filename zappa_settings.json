@@ -1,24 +1,51 @@
 {
-    "dev": {
-        "app_function": "main.lambda_handler",
+    "download-dev": {
+        "app_function": "main.lambda_handler_download_scrape",
         "aws_region": "us-east-1",
         "exclude": [
             "boto3",
-            "dateutil",
             "botocore",
             "s3transfer",
-            "concurrent"
+            "concurrent",
+            "dateutil"
         ],
         "profile_name": "default",
-        "project_name": "parcial1",
+        "project_name": "parcial1-download",
         "runtime": "python3.12",
         "s3_bucket": "zappa-xe6o93rce",
         "apigateway_enabled": false,
         "manage_roles": false,
         "role_name": "LabRole",
-        "events": [{
-            "function": "main.lambda_handler",
-            "expression": "cron(0 9 ? * MON *)"
-        }]
+        "events": [
+            {
+                "function": "main.lambda_handler_download_scrape",
+                "expression": "cron(0 9 ? * MON *)"
+            }
+        ]
+    },
+    "upload-dev": {
+        "app_function": "main.lambda_handler_upload_csv",
+        "aws_region": "us-east-1",
+        "exclude": [
+            "boto3",
+            "botocore",
+            "s3transfer",
+            "concurrent",
+            "dateutil"
+        ],
+        "profile_name": "default",
+        "project_name": "parcial1-upload",
+        "runtime": "python3.12",
+        "s3_bucket": "zappa-xe6o93rce",
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "role_name": "LabRole",
+        "events": [
+            {
+                "function": "main.lambda_handler_upload_csv",
+                "expression": "cron(30 9 ? * MON *)"
+            }
+        ]
     }
 }
+
