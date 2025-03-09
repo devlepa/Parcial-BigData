@@ -37,6 +37,13 @@ jobs:
 
       - name: List current directory
         run: ls
+
+      - name: Lint with flake8
+        run: |
+          flake8 .
+      - name: Run tests with pytest
+        run: |
+          pytest --maxfail=1 --disable-warnings -q
         
       - name: Set up Python
         uses: actions/setup-python@v4
