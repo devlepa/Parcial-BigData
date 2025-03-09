@@ -9,7 +9,6 @@
             "concurrent",
             "dateutil"
         ],
-        "profile_name": "default",
         "project_name": "parcial1-download",
         "runtime": "python3.12",
         "s3_bucket": "zappa-xe6o93rce",
@@ -34,7 +33,6 @@
             "concurrent",
             "dateutil"
         ],
-        "profile_name": "default",
         "project_name": "parcial1-upload",
         "runtime": "python3.12",
         "s3_bucket": "zappa-xe6o93rce",
@@ -46,6 +44,7 @@
                 "function": "main.lambda_handler_upload_csv",
                 "expression": "cron(30 9 ? * MON *)"
             }
-        ]
+        ],
+        "use_environment_credentials": true
     }
 }
