@@ -15,6 +15,7 @@
         "apigateway_enabled": false,
         "manage_roles": false,
         "role_name": "LabRole",
+        "slim_handler": true,
         "events": [
             {
                 "function": "main.lambda_handler_download_scrape",
@@ -39,6 +40,7 @@
         "apigateway_enabled": false,
         "manage_roles": false,
         "role_name": "LabRole",
+        "slim_handler": true,
         "events": [
             {
                 "function": "main.lambda_handler_upload_csv",
