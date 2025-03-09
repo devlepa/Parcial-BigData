@@ -28,7 +28,15 @@ async def read_root():
 def crear_csv(datos):
 
     df = pd.DataFrame(datos, columns=["precio", "ubicacion", "detalles"])
-    df.to_csv("./datos/datos.csv")
+    df.to_csv(f"./datos/datos{date_str}.csv")
+
+
+def subir_csv_local(s3_client, local_csv_path, bucket_name, s3_key):
+    """
+    Sube un archivo CSV local a S3.
+    """
+    s3_client.upload_file(local_csv_path, bucket_name, s3_key)
+    print(f"Archivo '{local_csv_path}' subido a s3://{bucket_name}/{s3_key}")
 
 
 if '__main__' == __name__:
@@ -41,4 +49,13 @@ if '__main__' == __name__:
     time.sleep(10)
     crear_csv(scraping(s3, bucket_name_1))
     time.sleep(10)
+    verificar_o_crear_bucket(bucket_name=bucket_name_2)
+    time.sleep(10)
+    s3 = boto3.client('s3', region_name='us-east-1')
+    subir_csv_local(
+        s3_client=s3,
+        local_csv_path="datos/datos{date_str}.csv",
+        bucket_name=bucket_name_2,
+        s3_key="carpeta/datos{date_str}.csv"
+    )
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

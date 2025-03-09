@@ -194,7 +194,7 @@
     
 </head>
 <body>
-    <header  class="optC">
+    <header  class="optA">
     <nav class="navbar">
         <div class="navbar__container">
             <a class="navbar__brand" href="/" title="Mitula">
@@ -695,7 +695,7 @@
         
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        initPage(JSON.parse('{"device":"DESKTOP","search":"Arriendo Bogotá","operationType":"rent","propertyType":"","filters":{"propertyWithPictures":false,"propertyLocation":""},"geoEntity":"mitula-CO-poblacion-0000014156","pageviewId":"921c1d07-584b-41e8-9e1a-013e967f7508","pageNumber":6,"isPaid":false,"formId":"filters-bar","text":"Bogotá","geoSlug":"bogota","findIntent":{"operationType":"rent","geoId":"mitula-CO-poblacion-0000014156","page":"6"},"isGDPRCountry":false,"shouldShowProjectSnippet":false,"shouldRequestWebPushPermission":true,"shouldShowGoogleOneTapOnLoad":true,"shouldShowEmailRetentionModal":true}'));
+        initPage(JSON.parse('{"device":"DESKTOP","search":"Arriendo Bogotá","operationType":"rent","propertyType":"","filters":{"propertyWithPictures":false,"propertyLocation":""},"geoEntity":"mitula-CO-poblacion-0000014156","pageviewId":"4cd3ee09-775a-4ef7-b93f-49023b8075c5","pageNumber":6,"isPaid":false,"formId":"filters-bar","text":"Bogotá","geoSlug":"bogota","findIntent":{"operationType":"rent","geoId":"mitula-CO-poblacion-0000014156","page":"6"},"isGDPRCountry":false,"shouldShowProjectSnippet":false,"shouldRequestWebPushPermission":true,"shouldShowGoogleOneTapOnLoad":true,"shouldShowEmailRetentionModal":true}'));
     });
 </script>
 
@@ -722,7 +722,7 @@
     <input type="hidden" name="sorting" id="sort" value=""/>
     <input type="hidden" name="price" id="price" value=""/>
     <input type="hidden" name="geoId" id="geoId"  value="mitula-CO-poblacion-0000014156"/>
-    <div class="filters-section optC">
+    <div class="filters-section optA">
         
         <div class="filter-option modal-filter-option-operation-type">                     <div class="input">
                        <div class="input__title">
@@ -947,7 +947,7 @@
             </div>
         </div>
     </div>
-        <div id="filters-container" class="filters-container optC">
+        <div id="filters-container" class="filters-container optA">
             <nav id="" class="filters__nav layout-padded">
                 <form method="get" class="filters__form content__wrapper" id="filters-bar">
     <input type="hidden" name="bedroomsNumber" id="bedroomsNumber" value=""/>
@@ -1045,15 +1045,93 @@
     </div>
 </div>
 </div>
-        
+                <div class="filter-option filter-option--rooms "><div class="wl-selector-container js-wl-selector-container ">
+    
+    <div class="wl-selector-container__option">
+        <div class="wl-selector-container__filter-button js-wl-selector-container__filter-button "
+             data-name="wl-selector-container-minBedrooms"
+             data-test="minBedrooms"
+             data-name="wl-selector-container-minBedrooms">
+            <span class="label" data-default="Habitaciones">Habitaciones</span>
+            <i></i>
+        </div>
+    </div>
+    <div class="wl-selector-container__content js-wl-selector-container__content "
+         data-name="wl-selector-container-minBedrooms" data-test="minBedrooms-content">
+        <div class="wl-linear-selector">
+    <div class="wl-linear-selector__linear-grid">
+            <div class="wl-linear-selector__linear-grid__content">
+                <label class="wl-linear-selector__linear-grid__content__label">
+                    1
+                    <input type="checkbox"
+                           data-test="minBedrooms-0"
+                           name="minBedrooms"
+                           value="1"
+                           class="wl-linear-selector-filter-input js-wl-linear-selector-filter-input"
+                           >
+                </label>
+            </div>
+            <div class="wl-linear-selector__linear-grid__content">
+                <label class="wl-linear-selector__linear-grid__content__label">
+                    2
+                    <input type="checkbox"
+                           data-test="minBedrooms-1"
+                           name="minBedrooms"
+                           value="2"
+                           class="wl-linear-selector-filter-input js-wl-linear-selector-filter-input"
+                           >
+                </label>
+            </div>
+            <div class="wl-linear-selector__linear-grid__content">
+                <label class="wl-linear-selector__linear-grid__content__label">
+                    3
+                    <input type="checkbox"
+                           data-test="minBedrooms-2"
+                           name="minBedrooms"
+                           value="3"
+                           class="wl-linear-selector-filter-input js-wl-linear-selector-filter-input"
+                           >
+                </label>
+            </div>
+            <div class="wl-linear-selector__linear-grid__content">
+                <label class="wl-linear-selector__linear-grid__content__label">
+                    4
+                    <input type="checkbox"
+                           data-test="minBedrooms-3"
+                           name="minBedrooms"
+                           value="4"
+                           class="wl-linear-selector-filter-input js-wl-linear-selector-filter-input"
+                           >
+                </label>
+            </div>
+            <div class="wl-linear-selector__linear-grid__content">
+                <label class="wl-linear-selector__linear-grid__content__label">
+                    5
+                    <input type="checkbox"
+                           data-test="minBedrooms-4"
+                           name="minBedrooms"
+                           value="5"
+                           class="wl-linear-selector-filter-input js-wl-linear-selector-filter-input"
+                           >
+                </label>
+            </div>
+    </div>
+</div>
+            <div class="wl-selector-container__content__buttons">
+                    <button class="wl-selector-container__content__buttons__apply-button js-wl-selector-container__content__apply-button"
+                            name="wl-selector-apply"
+                            id="minBedrooms_apply"
+                            type="submit">Aplicar</button>
+            </div>
+    </div>
+</div>
+</div>
     </div>
                 </form>
                 <div class="filters__filter-button" id="filters-button" data-test="filters-button">
-                    <span>Más filtros</span>
+                    <span>Filtros</span>
                 </div>
-                <div class="serp__retention-save-desktop js_open-retention-modal" id="save-search-opener" data-test="save-search">
-     <span>Guardar búsqueda</span>
- </div>
+                
                 <div class="filters__clear-all">
   <a href="/find?operationType=rent&geoId=mitula-CO-poblacion-0000014156" rel="nofollow">Borrar filtros</a>
 </div>
@@ -1083,7 +1161,7 @@ googletag.defineSlot('/1241729/network_serp_horizontal_b', [[300, 250]], 'div-gp
         
         googletag.pubads().setTargeting('net_zone_1', ['cundinamarca']);
 googletag.pubads().setTargeting('net_zone_2', ['bogot%c3%a1']);
-        googletag.pubads().setTargeting("split_test", "2")
+        googletag.pubads().setTargeting("split_test", "0")
         googletag.pubads().setTargeting("personalized", "true")
              googletag.pubads().enableSingleRequest();
              googletag.pubads().collapseEmptyDivs(true);
@@ -1148,20 +1226,20 @@ googletag.pubads().setTargeting('net_zone_2', ['bogot%c3%a1']);
     <div class="serp-page__wrapper">
 
 
-        <div id="listings" data-tracking="1" data-pageviewId="921c1d07-584b-41e8-9e1a-013e967f7508">
+        <div id="listings" data-tracking="1" data-pageviewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5">
             <section class="listings" id="listings-section">
 
                 <div class="listings__cards notSponsored" data-test="listings-serp" id="listings-content">
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-725f-872945647e6-8bbc-1914a70-2f49?page=6&pos=0&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-725f-872945647e6-8bbc-1914a70-2f49?page=6&pos=0&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Casa en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis0"
     data-index="0"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01914970-2e49-715f-8abc-0872945646e6"
     data-section="1"
     data-price="20,000,000"
@@ -1341,13 +1419,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-77e8-25b9c193cb82-b9bd-194ab8e-b7cf?page=6&pos=1&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-77e8-25b9c193cb82-b9bd-194ab8e-b7cf?page=6&pos=1&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Seguridad privada"
     data-test="normalListingRetis1"
     data-index="1"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194aa8e-b6cf-76e8-b8bd-25b9c193ca82"
     data-section="1"
     data-price="3,500,000"
@@ -1568,7 +1646,7 @@ Te presentamos este impresionante apartamento de 26 M2 con una excelente ubicaci
     <p class='title'>Mejora tu búsqueda</p>
     
     <div id="js-narrow-interlinking" class="options">
-        <a class="link" href="/casas/arriendo-apartamentos-bogota" title="Apartamentos  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Apartamentos  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-apartaestudios-bogota" title="Apartaestudios  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Apartaestudios  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-casas-bogota" title="Casas  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Casas  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-casas-campestres-bogota" title="Casas Campestres  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Casas Campestres  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-edificios-bogota" title="Edificios  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Edificios  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-fincas-bogota" title="Fincas  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Fincas  (16.663)</wl-chip></a>
+        <a class="link" href="/casas/arriendo-edificios-bogota" title="Edificios  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Edificios  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-casas-bogota" title="Casas  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Casas  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-apartamentos-bogota" title="Apartamentos  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Apartamentos  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-apartaestudios-bogota" title="Apartaestudios  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Apartaestudios  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-casas-campestres-bogota" title="Casas Campestres  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Casas Campestres  (16.663)</wl-chip></a><a class="link" href="/casas/arriendo-fincas-bogota" title="Fincas  (16.663)" data-name="narrow-interlinking-navigation" data-section="6001"><wl-chip>Fincas  (16.663)</wl-chip></a>
     </div>
 </div>
             </div>
@@ -1576,13 +1654,13 @@ Te presentamos este impresionante apartamento de 26 M2 con una excelente ubicaci
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7dd0-5004b9007cbf-9275-19569fb-b5d6?page=6&pos=2&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7dd0-5004b9007cbf-9275-19569fb-b5d6?page=6&pos=2&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis2"
     data-index="2"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="019568fb-b4d6-7cd0-9175-5004b9007bbf"
     data-section="1"
     data-price="13,000,000"
@@ -1887,7 +1965,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 3 días, 12 horas  - MORE PLUS SAS
+                        Hace 3 días, 15 horas  - MORE PLUS SAS
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -1907,13 +1985,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-76bd-f65bd2af080f-b30c-18fc311-ac83?page=6&pos=3&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-76bd-f65bd2af080f-b30c-18fc311-ac83?page=6&pos=3&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis3"
     data-index="3"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="018fc211-ab83-75bd-b20c-f65bd2af070f"
     data-section="1"
     data-price="4,700,000"
@@ -2153,13 +2231,13 @@ Cuenta con 3 habitaciones, la principal con walk in closet, 2 baños, estudio, z
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-80ff-4e0190c8ad1c-a83c-19554dd-64d8?page=6&pos=4&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=true"
+    href="/adform/24301-256-80ff-4e0190c8ad1c-a83c-19554dd-64d8?page=6&pos=4&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=true"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Internet"
     data-test="normalListingRetis4"
     data-index="4"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="019553dd-63d8-7fff-a73c-4e0190c8ac1c"
     data-section="1"
     data-price="1,700,000"
@@ -2545,7 +2623,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 5 días, 21 horas  - Nohora Acosta Gonzalez Asesora Inmobiliaria
+                        Hace 5 días, 23 horas  - Nohora Acosta Gonzalez Asesora Inmobiliaria
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -2562,13 +2640,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7dcd-f7cfbcde00c6-861a-194cd4e-5a22?page=6&pos=5&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7dcd-f7cfbcde00c6-861a-194cd4e-5a22?page=6&pos=5&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Internet"
     data-test="normalListingRetis5"
     data-index="5"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194cc4e-5922-7ccd-851a-f7cfbcddffc6"
     data-section="1"
     data-price="2,200,000"
@@ -2763,13 +2841,13 @@ Este espectacular apartamento mono-ambiente en alquiler se encuentra en una de l
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7ed6-840402d1bb4a-ab9f-1949aed-e947?page=6&pos=6&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7ed6-840402d1bb4a-ab9f-1949aed-e947?page=6&pos=6&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Cocina integral"
     data-test="normalListingRetis6"
     data-index="6"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="019499ed-e847-7dd6-aa9f-840402d1ba4a"
     data-section="1"
     data-price="2,100,000"
@@ -2923,7 +3001,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 5 días, 20 horas  - Beatus Group Bienes Raíces
+                        Hace 5 días, 22 horas  - Beatus Group Bienes Raíces
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -2942,13 +3020,13 @@ Este espectacular apartamento mono-ambiente en alquiler se encuentra en una de l
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-765b-c805a83f32cb-b7e4-193cd95-3196?page=6&pos=7&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-765b-c805a83f32cb-b7e4-193cd95-3196?page=6&pos=7&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis7"
     data-index="7"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0193cc95-3096-755b-b6e4-c805a83f31cb"
     data-section="1"
     data-price="7,500,000"
@@ -3347,13 +3425,13 @@ Excelente ubicación en el n&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7fec-80c662d60a8-b232-192fff2-d800?page=6&pos=8&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7fec-80c662d60a8-b232-192fff2-d800?page=6&pos=8&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis8"
     data-index="8"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0192fef2-d700-7eec-b132-080c662d5fa8"
     data-section="1"
     data-price="12,000,000"
@@ -3676,13 +3754,13 @@ Ingresas en ascensor privado al salón comedor y de inmediato de&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7821-a7a2885abc0c-a74a-1938687-89ce?page=6&pos=9&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7821-a7a2885abc0c-a74a-1938687-89ce?page=6&pos=9&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Estudio en arriendo en Bogotá, Bogotá - Cocina integral"
     data-test="normalListingRetis9"
     data-index="9"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01938587-88ce-7721-a64a-a7a2885abb0c"
     data-section="1"
     data-price="3,800,000"
@@ -3941,13 +4019,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7f77-f537c2cc044f-8d6c-193c931-7c62?page=6&pos=10&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7f77-f537c2cc044f-8d6c-193c931-7c62?page=6&pos=10&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis10"
     data-index="10"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0193c831-7b62-7e77-8c6c-f537c2cc034f"
     data-section="1"
     data-price="5,000,000"
@@ -4192,13 +4270,13 @@ El apto consta de 3 cómodas h&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7f76-4ebbc5286d45-9e5b-195462e-d6e2?page=6&pos=11&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7f76-4ebbc5286d45-9e5b-195462e-d6e2?page=6&pos=11&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis11"
     data-index="11"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0195452e-d5e2-7e76-9d5b-4ebbc5286c45"
     data-section="1"
     data-price="12,000,000"
@@ -4563,7 +4641,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 5 días, 11 horas  - Grupo Danka Internacional 
+                        Hace 5 días, 14 horas  - Grupo Danka Internacional 
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -4582,13 +4660,13 @@ Una propiedad unica en CHICO NAVARRA, un barrio de tradición preferido por los 
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-80fa-ee2687017f53-9559-194bd55-c14c?page=6&pos=12&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-80fa-ee2687017f53-9559-194bd55-c14c?page=6&pos=12&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis12"
     data-index="12"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194bc55-c04c-7ffa-9459-ee2687017e53"
     data-section="1"
     data-price="6,800,000"
@@ -4946,13 +5024,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7e09-c84a5d12b055-ab26-1946379-d2d6?page=6&pos=13&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7e09-c84a5d12b055-ab26-1946379-d2d6?page=6&pos=13&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis13"
     data-index="13"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01946279-d1d6-7d09-aa26-c84a5d12af55"
     data-section="1"
     data-price="10,990,000"
@@ -5190,13 +5268,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-71d7-c9f8a4d719b6-8fd5-192fff9-2a1c?page=6&pos=14&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-71d7-c9f8a4d719b6-8fd5-192fff9-2a1c?page=6&pos=14&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Casa en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis14"
     data-index="14"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0192fef9-291c-70d7-8ed5-c9f8a4d718b6"
     data-section="1"
     data-price="9,999,000"
@@ -5552,13 +5630,13 @@ Una casa de patrimonio arquitectonico es invaluable por su historia en cada ladr
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-72f7-74ef3e97a38-aa5f-194ab90-27df?page=6&pos=15&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-72f7-74ef3e97a38-aa5f-194ab90-27df?page=6&pos=15&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Estudio en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis15"
     data-index="15"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194aa90-26df-71f7-a95f-074ef3e97938"
     data-section="1"
     data-price="2,500,000"
@@ -5754,13 +5832,13 @@ Cuenta con sala comedor amplio y con chimenea, baño social y mueble de linos, l
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7fca-b737fed8053d-b813-1955ff3-29b4?page=6&pos=16&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7fca-b737fed8053d-b813-1955ff3-29b4?page=6&pos=16&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis16"
     data-index="16"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01955ef3-28b4-7eca-b713-b737fed8043d"
     data-section="1"
     data-price="4,800,000"
@@ -5969,7 +6047,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 2 días, 11 horas  - Andrea Marcela Aponte Bohorquez
+                        Hace 2 días, 14 horas  - Andrea Marcela Aponte Bohorquez
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -5996,13 +6074,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-716d-c8a1fa827e3b-a161-1956cab-4a45?page=6&pos=17&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-716d-c8a1fa827e3b-a161-1956cab-4a45?page=6&pos=17&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis17"
     data-index="17"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01956bab-4945-706d-a061-c8a1fa827d3b"
     data-section="1"
     data-price="3,500,000"
@@ -6225,7 +6303,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 1 día, 18 horas  - Encolombiansuites.com
+                        Hace 1 día, 20 horas  - Encolombiansuites.com
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -6244,13 +6322,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-736c-5bbe251f518a-a9ad-1956f64-9d05?page=6&pos=18&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-736c-5bbe251f518a-a9ad-1956f64-9d05?page=6&pos=18&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis18"
     data-index="18"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01956e64-9c05-726c-a8ad-5bbe251f508a"
     data-section="1"
     data-price="6,500,000"
@@ -6554,7 +6632,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 1 día, 13 horas  - Andrea Marcela Aponte Bohorquez
+                        Hace 1 día, 15 horas  - Andrea Marcela Aponte Bohorquez
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -6581,13 +6659,13 @@ Cocina cerrad&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7934-456a1c65af8b-b559-195033d-90fa?page=6&pos=19&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7934-456a1c65af8b-b559-195033d-90fa?page=6&pos=19&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis19"
     data-index="19"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0195023d-8ffa-7834-b459-456a1c65ae8b"
     data-section="1"
     data-price="4,300,000"
@@ -6842,13 +6920,13 @@ El canon de arriendo es de $3.900.000 más $400.000 &hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7fb9-ecba46f3d691-a79c-194aba8-4e04?page=6&pos=20&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=true"
+    href="/adform/24301-256-7fb9-ecba46f3d691-a79c-194aba8-4e04?page=6&pos=20&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=true"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis20"
     data-index="20"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194aaa8-4d04-7eb9-a69c-ecba46f3d591"
     data-section="1"
     data-price="2,500,000"
@@ -7034,7 +7112,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 13 horas  - Grupo Danka Internacional 
+                        Hace 15 horas  - Grupo Danka Internacional 
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -7053,13 +7131,13 @@ Espectacular apartamento 4to piso interior con buena luz, remodelado, cómodo en
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-78c0-802a8c09f602-87db-194b063-f01d?page=6&pos=21&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-78c0-802a8c09f602-87db-194b063-f01d?page=6&pos=21&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis21"
     data-index="21"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194af63-ef1d-77c0-86db-802a8c09f502"
     data-section="1"
     data-price="4,600,000"
@@ -7306,13 +7384,13 @@ Cuarto auxilia&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-75ac-de4af8d689c0-8e3f-195744e-b77b?page=6&pos=22&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-75ac-de4af8d689c0-8e3f-195744e-b77b?page=6&pos=22&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis22"
     data-index="22"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0195734e-b67b-74ac-8d3f-de4af8d688c0"
     data-section="1"
     data-price="10,500,000"
@@ -7496,7 +7574,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 1 día, 12 horas  - Andrea Marcela Aponte Bohorquez
+                        Hace 1 día, 14 horas  - Andrea Marcela Aponte Bohorquez
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -7529,13 +7607,13 @@ El edificio cuenta con gim&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-44b9-1d76f0da2310-92db-d20e0d0a-d3c1?page=6&pos=23&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-44b9-1d76f0da2310-92db-d20e0d0a-d3c1?page=6&pos=23&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Casa en arriendo en Bogotá, Suba - Aparcadero"
     data-test="normalListingRetis23"
     data-index="23"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="d20e0c0a-d2c1-43b9-91db-1d76f0da2210"
     data-section="1"
     data-price="11,000,000"
@@ -7808,13 +7886,13 @@ Primer Nive&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-12ed-a5bdaccc19a4-9c66-2e065df0-cb65?page=6&pos=24&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-12ed-a5bdaccc19a4-9c66-2e065df0-cb65?page=6&pos=24&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Casa en arriendo en Bogotá, D.C., Bogotá, D.C. - Aparcadero"
     data-test="normalListingRetis24"
     data-index="24"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="2e065cf0-ca65-11ed-9b66-a5bdaccc18a4"
     data-section="1"
     data-price="15,000,000"
@@ -8112,13 +8190,13 @@ TENGO LAS MEJORES CASAS DE SAN SIMÓN EN VENTA O ARRIENDO Y ALGUNAS AMOBLADAS.
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-74df-f88592c7ae35-b068-193a4b5-9e87?page=6&pos=25&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-74df-f88592c7ae35-b068-193a4b5-9e87?page=6&pos=25&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis25"
     data-index="25"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0193a3b5-9d87-73df-af68-f88592c7ad35"
     data-section="1"
     data-price="4,606,193"
@@ -8348,13 +8426,13 @@ El ca&hellip;
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7d56-72655782ce02-a7af-1952e8b-aef7?page=6&pos=26&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7d56-72655782ce02-a7af-1952e8b-aef7?page=6&pos=26&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis26"
     data-index="26"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="01952d8b-adf7-7c56-a6af-72655782cd02"
     data-section="1"
     data-price="4,978,000"
@@ -8615,7 +8693,7 @@ loading="lazy"
             </div>
                 <div class="listing-card__information__bottom">
                     <p class="listing-card__information__bottom__published-date-and-agency" data-test="snippet__published-date-and-agency">
-                        Hace 5 días, 1 hora  - Renovación Urbana
+                        Hace 5 días, 4 horas  - Renovación Urbana
                     </p>
                     <button class="button button--rounded" data-test="snippet__view-detail-button" data-event-origin="view_detail_button">
                         Ver en detalle
@@ -8632,13 +8710,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-71dd-79bb3d1df16a-a390-19449a3-4bd8?page=6&pos=27&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-71dd-79bb3d1df16a-a390-19449a3-4bd8?page=6&pos=27&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis27"
     data-index="27"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="019448a3-4ad8-70dd-a290-79bb3d1df06a"
     data-section="1"
     data-price="3,800,000"
@@ -8859,13 +8937,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7604-4e894756e191-a346-195081f-1423?page=6&pos=28&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=false"
+    href="/adform/24301-256-7604-4e894756e191-a346-195081f-1423?page=6&pos=28&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=false"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, D.C., Bogotá - Aparcadero"
     data-test="normalListingRetis28"
     data-index="28"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0195071f-1323-7504-a246-4e894756e091"
     data-section="1"
     data-price="4,000,000"
@@ -9112,13 +9190,13 @@ loading="lazy"
             
 <a
     class="listing listing-card"
-    href="/adform/24301-256-7c95-d6edd790c869-a832-194d6ff-93fe?page=6&pos=29&t_sec=1&t_pvid=921c1d07-584b-41e8-9e1a-013e967f7508&hd=true"
+    href="/adform/24301-256-7c95-d6edd790c869-a832-194d6ff-93fe?page=6&pos=29&t_sec=1&t_pvid=4cd3ee09-775a-4ef7-b93f-49023b8075c5&hd=true"
     target="_self"
     rel="nofollow"
     title="Apartamento en arriendo en Bogotá, Bogotá - Aparcadero"
     data-test="normalListingRetis29"
     data-index="29"
-    data-pageViewId="921c1d07-584b-41e8-9e1a-013e967f7508"
+    data-pageViewId="4cd3ee09-775a-4ef7-b93f-49023b8075c5"
     data-listingId="0194d5ff-92fe-7b95-a732-d6edd790c769"
     data-section="1"
     data-price="3,596,000"
@@ -9600,19 +9678,19 @@ loading="lazy"
             <div class="horizontal_elements">
                 <ul class="horizontal_elements__list adaptable" data-test="horizontal-interlinking-list">
                             <li class="link">
+                                <h3><a href="/casas/arriendo-edificios-bogota" title="Arriendo Edificios Bogota  (16.663)" data-test="related-searches-link">Arriendo Edificios Bogota  (16.663)</a></h3>
+                            </li>
+                            <li class="link">
+                                <h3><a href="/casas/arriendo-casas-bogota" title="Arriendo Casas Bogota  (16.663)" data-test="related-searches-link">Arriendo Casas Bogota  (16.663)</a></h3>
+                            </li>
+                            <li class="link">
                                 <h3><a href="/casas/arriendo-apartamentos-bogota" title="Arriendo Apartamentos Bogota  (16.663)" data-test="related-searches-link">Arriendo Apartamentos Bogota  (16.663)</a></h3>
                             </li>
                             <li class="link">
                                 <h3><a href="/casas/arriendo-apartaestudios-bogota" title="Arriendo Apartaestudios Bogota  (16.663)" data-test="related-searches-link">Arriendo Apartaestudios Bogota  (16.663)</a></h3>
                             </li>
                             <li class="link">
-                                <h3><a href="/casas/arriendo-casas-bogota" title="Arriendo Casas Bogota  (16.663)" data-test="related-searches-link">Arriendo Casas Bogota  (16.663)</a></h3>
-                            </li>
-                            <li class="link">
                                 <h3><a href="/casas/arriendo-casas-campestres-bogota" title="Arriendo Casas Campestres Bogota  (16.663)" data-test="related-searches-link">Arriendo Casas Campestres Bogota  (16.663)</a></h3>
-                            </li>
-                            <li class="link">
-                                <h3><a href="/casas/arriendo-edificios-bogota" title="Arriendo Edificios Bogota  (16.663)" data-test="related-searches-link">Arriendo Edificios Bogota  (16.663)</a></h3>
                             </li>
                             <li class="link">
                                 <h3><a href="/casas/arriendo-fincas-bogota" title="Arriendo Fincas Bogota  (16.663)" data-test="related-searches-link">Arriendo Fincas Bogota  (16.663)</a></h3>
@@ -9641,7 +9719,7 @@ loading="lazy"
             <div class="horizontal_elements">
                 <ul class="horizontal_elements__list adaptable" data-test="horizontal-interlinking-list">
                             <li class="link">
-                                <h3><a href="/casas/arriendo-remate-bogota" title="Arriendo Remate Bogota  (16.646)" data-test="related-searches-link">Arriendo Remate Bogota  (16.646)</a></h3>
+                                <h3><a href="/casas/arriendo-remate-bogota" title="Arriendo Remate Bogota  (16.979)" data-test="related-searches-link">Arriendo Remate Bogota  (16.979)</a></h3>
                             </li>
                             <li class="link">
                                 <h3><a href="/casas/arriendo-estrato-bogota" title="Arriendo Estrato Bogota  (2.675)" data-test="related-searches-link">Arriendo Estrato Bogota  (2.675)</a></h3>
@@ -9805,35 +9883,8 @@ loading="lazy"
                     </div>
                 </div>
             </div>
-            <wl-modal class="retention-modal" id="js_save-actual-search-modal" title="Guardar búsqueda">
-                        <div class="save-search" data-test="email-retention">
-                <div class="save-search__form__description">Déjanos tu email y te avisamos cuando tengamos novedades sobre:</div>
-                <div class="save-search__search-text">
-                    <svg class="icon icon--size-s icon--color-default">
-    <use xlink:href="#svg-check"></use>
-</svg>
-                    <span>Arriendo Bogotá</span>
-                </div>
-                <form id="save-actual-search-form" class="save-search__form" data-test="email-retention__form" data-form-origin-opened-from="save-actual-search-form">
-                            <label for="save-search-input">Email</label>
-                            <input type="email" id="save-search-input" name="email" class="input__wrapper__input" aria-label="Email" placeholder="Introduzca un email" required="true" data-test="email-retention-input"/>
-                            <span class="save-search__form__helper-text">Al suscribirte aceptas <a class="link" href="https://www.lifullconnect.com/aviso-legal" title="los términos y condiciones">los términos y condiciones</a> y <a class="link" href="https://www.lifullconnect.com/politica-de-privacidad-region4" title="la política de privacidad">la política de privacidad</a></span>
-                            <wl-branded-button variant="filled" color="primary" type="submit" size="large" data-test='submit-filters-modal' class='js_save-email'>  Recibir alertas  </wl-branded-button>
-                </form>
-            </div>
-            <div slot="footer" class="modal-footer"></div>
-        </wl-modal>
-            <wl-modal class="save-similar-modal" id="js_save-similars-searches-modal" title="Guardar búsqueda">
-                        <div class="save-search" data-test="email-retention">
-                <div class="save-search__form__description">Tu búsqueda <b>Arriendo Bogotá</b> se ha guardado.</div>
-<!--                <div class="save-search__line"></div>
-                <div class="save-search__form__description">Otras búsquedas que pueden interesarte:</div> -->
-                
-                <wl-branded-button variant="filled" color="primary" type="submit" size="large" data-test='save-similar-searches-close' class='save-similar-searches-close js_save-email'>  Cerrar  </wl-branded-button>
-            </div>
-               
-            <div slot="footer" class="modal-footer"></div>
-        </wl-modal>
+    
+    
 </div>
 
     </main>
@@ -10426,7 +10477,7 @@ loading="lazy"
         </symbol>
     </svg>
     <script type="text/javascript">
-    gtag('event', 'ABTS:2025021201:2', {'section': 'FLOWS_FOR_SAVE_SEARCH', 'sub_section': '2' });
+    gtag('event', 'ABTS:2025021201:0', {'section': 'FLOWS_FOR_SAVE_SEARCH', 'sub_section': '0' });
 </script>
 </body>
 </html>
