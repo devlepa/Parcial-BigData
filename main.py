@@ -54,8 +54,8 @@ if '__main__' == __name__:
     s3 = boto3.client('s3', region_name='us-east-1')
     subir_csv_local(
         s3_client=s3,
-        local_csv_path="datos/datos{date_str}.csv",
+        local_csv_path=f"datos/datos{date_str}.csv",
         bucket_name=bucket_name_2,
-        s3_key="carpeta/datos{date_str}.csv"
+        s3_key=f"carpeta/datos{date_str}.csv"
     )
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
