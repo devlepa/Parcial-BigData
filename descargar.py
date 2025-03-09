@@ -11,15 +11,18 @@ def archivos_s3_descargados(s3, bucket_name):
     print(f"📂 Archivos encontrados en '{bucket_name}':")
     for archivo in archivos_en_s3:
         print(f" - {archivo}")
-        
-    print(f"\n📄 Leyendo archivo y descargando archivos en local: {archivos_en_s3}")
 
-    i=0
+    print(
+        f"\n📄 Leyendo archivo y descargando archivos en local: {archivos_en_s3}")
+
+    i = 0
     for archivo in archivos_en_s3:
         response = s3.get_object(Bucket=bucket_name, Key=archivo)
         html_content = response["Body"].read().decode("utf-8")
-        with open(f"./html/index{i + 1}.html" , "w") as file:
+        with open(f"./html/index{i + 1}.html", "w") as file:
             file.write(html_content)
         i = i + 1
-    
-    return {"status": "success", "archivos_almacenados y guardados en local": archivos_en_s3}
+
+    return {
+        "status": "success",
+        "archivos_almacenados y guardados en local": archivos_en_s3}
