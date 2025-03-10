@@ -43,8 +43,13 @@
         "slim_handler": true,
         "events": [
             {
-                "function": "main.lambda_handler_upload_csv",
-                "expression": "cron(30 9 ? * MON *)"
+                "function": "proyecto.app",
+                "event_source": {
+                    "arn": "arn:aws:s3:::bucker-zappa-downloder-storage",
+                    "events": [
+                        "s3:ObjectCreated:*"
+                    ]
+                }
             }
         ],
         "use_environment_credentials": true
