@@ -15,6 +15,7 @@ headers = {"user-Agent": "Mozilla/5.0"}
 bucket_name_1 = "landing-casas-0101"
 bucket_name_2 = "landing-casas-0101-processing"
 date_str = datetime.datetime.now().strftime("%Y-%m-%d")
+s3 = boto3.client("s3", region_name="us-east-1")
 
 app = FastAPI()
 
@@ -39,24 +40,23 @@ def subir_csv_local(s3_client, local_csv_path, bucket_name, s3_key):
 
 
 def lambda_handler_download_scrape(event, context):
-    s3 = boto3.client("s3", region_name="us-east-1")
 
     # Verifica o crea bucket 1
     verificar_o_crear_bucket(bucket_name_1)
-    time.sleep(5)
+    time.sleep(2)
 
     # Sube HTMLs al bucket 1
     subir_s3(s3, path, headers, date_str, bucket_name_1)
-    time.sleep(5)
+    time.sleep(2)
 
     # Descarga HTMLs a local
     archivos_s3_descargados(s3, bucket_name_1)
-    time.sleep(5)
+    time.sleep(2)
 
     # Scrapear y crear CSV local
     datos_scrapeados = scraping(s3, bucket_name_1)
     crear_csv(datos_scrapeados)
-    time.sleep(5)
+    time.sleep(2)
 
     return {
         "status": "done",
@@ -92,4 +92,34 @@ def lambda_handler_upload_csv(event, context):
 # ------------------------------------------------------------------------
 if __name__ == "__main__":
     import uvicorn
+
+    verificar_o_crear_bucket(bucket_name_1)
+    time.sleep(2)
+
+    # Sube HTMLs al bucket 1
+    subir_s3(s3, path, headers, date_str, bucket_name_1)
+    time.sleep(2)
+
+    # Descarga HTMLs a local
+    archivos_s3_descargados(s3, bucket_name_1)
+    time.sleep(2)
+
+    # Scrapear y crear CSV local
+    datos_scrapeados = scraping(s3, bucket_name_1)
+    crear_csv(datos_scrapeados)
+    time.sleep(2)
+
+
+    s3 = boto3.client("s3", region_name="us-east-1")
+
+    # Verifica o crea bucket 2
+    verificar_o_crear_bucket(bucket_name_2)
+    time.sleep(5)
+
+    # Sube el CSV local al bucket 2
+    local_csv_path = f"datos/datos{date_str}.csv"
+    s3_key = f"carpeta/datos{date_str}.csv"
+
+    subir_csv_local(s3, local_csv_path, bucket_name_2, s3_key)
+
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
