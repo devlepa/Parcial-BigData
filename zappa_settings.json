@@ -44,7 +44,7 @@
             {
                 "function": "proyecto.app",
                 "event_source": {
-                    "arn": "arn:aws:s3:::bucker-zappa-downloder-storage",
+                    "arn": "arn:aws:s3:::landing-casas-0101-processing",
                     "events": [
                         "s3:ObjectCreated:*"
                     ]

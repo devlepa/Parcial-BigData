@@ -32,6 +32,7 @@ jobs:
           source venv/bin/activate
           aws s3 ls
           
+          
           # Instalar dependencias
           python -m pip install --upgrade pip
           pip install -r requirements.txt
