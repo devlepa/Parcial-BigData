@@ -30,6 +30,7 @@ jobs:
           python -m venv venv
           # Activarlo
           source venv/bin/activate
+          aws s3 ls
           
           # Instalar dependencias
           python -m pip install --upgrade pip
@@ -47,4 +48,4 @@ jobs:
           # Finalmente, desplegar con Zappa
           zappa update download-dev
           zappa update upload-dev
-          
+
